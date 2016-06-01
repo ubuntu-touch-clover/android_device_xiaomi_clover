@@ -323,7 +323,6 @@ PRODUCT_PACKAGES += \
     init.mdm.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.qti.qseecomd.sh \
