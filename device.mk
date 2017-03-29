@@ -190,6 +190,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
 
+# Folio daemon
+PRODUCT_PACKAGES += \
+    folio_daemon
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \

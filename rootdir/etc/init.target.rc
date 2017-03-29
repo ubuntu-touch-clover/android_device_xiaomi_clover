@@ -602,6 +602,11 @@ on property:sys.incall=true
 on property:sys.incall=false
     write /sys/class/power_supply/battery/constant_charge_current_max 2000000
 
+service folio_daemon /vendor/bin/folio_daemon
+    class late_start
+    user root
+    group root
+
 #add for displayfeature
 service openad /system/vendor/bin/displayf_bin s 1
     user root
