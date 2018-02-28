@@ -82,11 +82,11 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@4.0-impl \
+    android.hardware.audio@4.0-impl:32 \
     android.hardware.audio@2.0-service \
-    android.hardware.audio.effect@4.0-impl \
+    android.hardware.audio.effect@4.0-impl:32 \
     android.hardware.audio.effect@2.0-service \
-    android.hardware.soundtrigger@2.0-impl \
+    android.hardware.soundtrigger@2.0-impl:32 \
     android.hardware.soundtrigger@2.0-service \
     audio.a2dp.default \
     audio.primary.sdm660 \
@@ -144,7 +144,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap \
     libxml2 \
-    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service
 
 # Connectivity Engine support (CNE)
@@ -170,10 +170,10 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system
 
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-impl:64 \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.mapper@2.0-impl \
-    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.composer@2.1-impl:64 \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
@@ -186,7 +186,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-impl:32 \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.1-service.clearkey
 
@@ -370,7 +370,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service
 
 PRODUCT_COPY_FILES += \
