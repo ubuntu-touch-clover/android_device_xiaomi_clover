@@ -140,6 +140,10 @@ on boot
     chown system system /sys/devices/soc/soc:fpc1020/fingerdown_wait
     chmod 0660 /sys/devices/soc/soc:fpc1020/fingerdown_wait
 
+    # Touchscreen
+    chown system system /proc/touchscreen/enable_dt2w
+    chmod 0660 /proc/touchscreen/enable_dt2w
+
     # wendell-20180423 end
     start getpersistlog
 
