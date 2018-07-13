@@ -178,6 +178,10 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl \
     android.frameworks.displayservice@1.0
 
+# Doze
+PRODUCT_PACKAGES += \
+    XiaomiDoze
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
