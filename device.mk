@@ -354,6 +354,10 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     telephony-ext
 
+PRODUCT_PACKAGES += \
+    rild \
+    CarrierConfig
+
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
