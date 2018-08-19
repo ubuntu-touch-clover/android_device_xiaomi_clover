@@ -377,7 +377,7 @@ function start_hbtp()
         # Start the Host based Touch processing but not in the power off mode.
         bootmode=`getprop ro.bootmode`
         if [ "charger" != $bootmode ]; then
-                start hbtp
+                start vendor.hbtp
         fi
 }
 
@@ -1525,7 +1525,7 @@ case "$target" in
                 case "$soc_id" in
                         "277" | "278")
                         # Start energy-awareness for 8976
-                        start energy-awareness
+                        start vendor.energy-awareness
                 ;;
                 esac
 
