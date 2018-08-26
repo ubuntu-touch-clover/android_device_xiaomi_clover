@@ -117,7 +117,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.colorpick_adjust=true \
     ro.df.effect.conflict=1 \
     ro.hardware.fingerprint=fpc \
-    ro.lineage.build.vendor_security_patch=2019-04-01 \
     sys.autobrightness_optimize=true \
     ro.nfc.port=I2C \
     persist.backup.ntpServer="0.pool.ntp.org" \
