@@ -357,7 +357,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     rild \
-    CarrierConfig
+    CarrierConfig \
+    Dialer
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
