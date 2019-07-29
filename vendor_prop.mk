@@ -54,6 +54,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bt.a2dp_offload_cap=sbc-aac \
     vendor.qcom.bluetooth.soc=cherokee \
     camera.aux.packagelist=org.codeaurora.snapcam \
+    persist.vendor.camera.HAL3.enabled=1 \
     persist.camera.preview.ubwc=0 \
     persist.camera.stats.test=5 \
     dalvik.vm.heapgrowthlimit=256m \
