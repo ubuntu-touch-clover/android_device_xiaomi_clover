@@ -927,7 +927,6 @@ etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
 framework/QtiTelephonyServicelibrary.jar|bc54ac5cec1f2a59139cc26391a2b9050fe145ff
 framework/embmslibrary.jar|180d4d6b65d989023364457eb1bf6e1d45f7e274
 framework/qcrilhook.jar|a854fff1973b0ad9935ca986945eeef84a3c79e6
-framework/qti-telephony-common.jar|f8d242dbbad7d54060742b1610eac89dd2a6ef7b
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|d1d3adfe6eff32a3013e146317324029181e3c4a
 vendor/bin/ATFWD-daemon|f487d848042053512b36fa4c12413975d8512cef
 vendor/bin/hw/qcrild|5714b7719e5922f32d3bf25916f2bb5d50c02c8c
@@ -1030,6 +1029,9 @@ vendor/lib64/vendor.qti.ims.callinfo@1.0.so|d5524d829c7c9160cb7360afd80f7df55900
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|6c4c726262231d84b128cad62ee3a4f8d11e7a63
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so|f982ba95f6e548d3cc791cd4b8f693cc00dc73be
 vendor/lib64/vendor.qti.imsrtpservice@1.0.so|7ba73cb608b8279094912ee7f6c47b90ec4b4650
+
+# Radio Telephony Common - from CAF - PKQ1.190723.001.temp08082313
+framework/qti-telephony-common.jar|3198a9b6ba8a72f54697e4f45e1459e77e11ff28
 
 # SCVE - from clover - OPM1.171019.019.V10.3.2.0.ODJCNXM
 vendor/etc/scve/facereco/gModel.dat|447e5e3fefe8bcf36db0f7a8595c63fb326879ba
