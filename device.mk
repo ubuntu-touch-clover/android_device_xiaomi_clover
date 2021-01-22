@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2021 HandsomeYingyan <handsomeyingyan@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -354,16 +355,15 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
 
 PRODUCT_PACKAGES += \
-    ims-ext-common \
-    telephony-ext
+    ims-ext-common 
 
 PRODUCT_PACKAGES += \
     rild \
     CarrierConfig \
     Dialer
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#   telephony-ext
 
 # Seccomp
 PRODUCT_COPY_FILES += \
@@ -419,7 +419,41 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+    
+# Halium/UBports
 
+# Disable FakeSensorServer so UBports can use it
+MINIMEDIA_SENSORSERVER_DISABLE := 1
+
+PRODUCT_PACKAGES += \
+    libmedia_omx \
+    android.frameworks.displayservice@1.0
+
+PRODUCT_PACKAGES += \
+    libion \
+    libmedia_compat_layer \
+    libsf_compat_layer \
+    libui_compat_layer
+
+# SalifishOS droidmedia
+PRODUCT_PACKAGES += \
+    libdroidmedia \
+    minimediaservice \
+    minisfservice \
+    miniafservice
+
+# Ubuntu
+PRODUCT_PACKAGES += \
+    libbiometry_fp_api \
+    libubuntu_application_api
+    
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.disabled.rc:system/etc/init/init.disabled.rc
+    
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubports/70-clover.rules:system/halium/lib/udev/rules.d/70-android.rules \
+    $(LOCAL_PATH)/ubports/scaling.conf:system/ubuntu/etc/ubuntu-touch-session.d/android.conf
+    
 # Wi-Fi Display
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
