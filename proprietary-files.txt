@@ -47,7 +47,6 @@ vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so|59e3b855c27efd0299113ceb4a9651c3
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|dbe449443a23b3424031caf13d7064ee93e14a51
 
 # Alarm - from wayne - PKQ1.180904.001.V10.3.4.0.PDCCNXM
--vendor/app/PowerOffAlarm/PowerOffAlarm.apk|d5b3fcb75c1a27acf7f3ddbd7029d56f0b66c724
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|1300f2aacbcd159a2587abc1f38031d9c1f1beed
 vendor/bin/power_off_alarm|f973dabbdba85ece5115d4beb457cb37887e4358
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
@@ -136,19 +135,6 @@ vendor/lib64/libcdsprpc.so|87322db104b15f26f79ce236c87307f2c8eac93d
 # CNE - from wayne - PKQ1.180904.001.V10.3.4.0.PDCCNXM
 etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
 etc/permissions/com.quicinc.cne.xml|e99e631d8b06ba4680529e9e4004d8d05baf6904
-framework/cneapiclient.jar|1f519b8dfac0a6768d1933beda49251592081053
-framework/com.quicinc.cne.api-V1.0-java.jar|9cf7b7f1784c3594e3329954f64b1b129c433e8d
-framework/com.quicinc.cne.api-V1.1-java.jar|6c8815af55cb424fe3936f37a72e2d5bdbfb3b53
-framework/com.quicinc.cne.constants-V1.0-java.jar|eb2f74d281079971d6cddffba67da0f1fae1ee06
-framework/com.quicinc.cne.constants-V2.0-java.jar|6af0a0cd6246ec202d39ec2add03189cd3fa8029
-framework/com.quicinc.cne.constants-V2.1-java.jar|f4b7ec116cd4edca3423f455fca2569ed0919b4b
-framework/com.quicinc.cne.jar|4c9edfcfdc9ed5fddaf119d79aee722e2c9bc09e
-framework/com.quicinc.cne.server-V1.0-java.jar|a2d2f2826716e8a8000887fc3a0b0ae6d13f9263
-framework/com.quicinc.cne.server-V2.0-java.jar|6bba42f810057b8b52a73f55dbf7bf4de4dac249
-framework/com.quicinc.cne.server-V2.1-java.jar|a95528efeb0c14a0077c8b0b375e95ac433edc33
-framework/com.quicinc.cne.server-V2.2-java.jar|e1041e559afecd0d9371ba78ddb36ea1873f9f15
-framework/vendor.qti.hardware.data.qmi-V1.0-java.jar|94c3e0efe3bc51358fe9145ed1ff0708c262380d
--priv-app/CNEService/CNEService.apk|ff03799e180b77b5b0763dd686f246563063ed2a
 vendor/bin/cnd|36f46a299d704ffc3215a56b23d50766c37f2e26
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml|1fb42c672a12b6660bdce3ea94e0c43719dd9de8
@@ -505,16 +491,12 @@ etc/dpm/dpm.conf|5f19d3984b5291ac956552bda2a84c10c535df0a
 etc/init/dpmd.rc|52ca6ad920a1804e4ff608113cece063730f5e0c
 etc/permissions/com.qti.dpmframework.xml|36b94c9338069e434b83359a92cdc7ff62b822df
 etc/permissions/dpmapi.xml|ded29f9befaef20a7ccee0c75427fda1d1d04890
-framework/com.qti.dpmframework.jar|4bdeade509cb417033402c8abbb3bfe7fbf155d0
-framework/dpmapi.jar|4940bdc99ec676e8c6372057f91ffc303f72b49d
-framework/tcmclient.jar|d63f61a2905cc48f0eed56cce5dc0ca80f7ada3a
 lib64/com.qualcomm.qti.dpm.api@1.0.so|2af88934e4039edaac842576a1861cbdfe39838b
 lib64/libdiag_system.so|5b0bee0dd80c8c4bedde159e3903596c5dfff745
 lib64/libdpmctmgr.so|611642251e77a1ce8a4bc59beaf4213bfc0cef8a
 lib64/libdpmfdmgr.so|84a6916dff3b3608e9ac83106df651ba995ca704
 lib64/libdpmframework.so|bbd59055bad5944fe8c8d8c7eb683b94646c6042
 lib64/libdpmtcm.so|db125f21d6f9da6afcb8956ba2eabae58cbeb30e
--priv-app/dpmserviceapp/dpmserviceapp.apk|319d3f8977cb167f062b23ae7f15ea37c83c20ab
 vendor/bin/dpmQmiMgr|e2f12b458321a9a9353f1c4ced85bc740a1094d2
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|05af4880ad4c633fe60750ff49525e62822585f7
 vendor/lib64/libdpmqmihal.so|fecdfdb7591feec835ed713863a8dbcca141b252
@@ -592,11 +574,8 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so|816095d72425f49ee68ffb628fd37b7b4
 vendor/lib64/vendor.qti.data.factory@1.0.so|cf0f34cc9d740a7cc53d152b5b3bc5128f3e0b26
 
 # Fingerprint - from clover - OPM1.171019.019.V10.3.2.0.ODJCNXM
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|3b250be8949dd1c86be312e9d8baf734bfd8a1aa
--vendor/app/QFingerprintService/QFingerprintService.apk|e716dd9a4c899ad86dde4ef973f664160ff719d7
 vendor/bin/qfp-daemon|df9caee9a4e5601e7be420d3513ba14d00745046
 vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
-vendor/framework/com.fingerprints.extension.jar|0bf2e925981862caee53d05acba330c3c02d5be2
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so|61e55697b4f8b7c2331a6a43e7db9c944100c0ab
 vendor/lib64/com.fingerprints.extension@1.0.so|c0d21b0982b265df2c8f1de22a07ab89c9aad630
 vendor/lib64/hw/fingerprint.fpc.so|e80014b9726cdcc5b7007575bc690bf1be1e3c4c
@@ -918,16 +897,9 @@ vendor/lib64/libQTEEConnector_vendor.so|4bcb0559863fc3adbbea8631a724d2332b7b7852
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so|b52b2ad63d7426dc62ef5a2bbc350cb7cb4bc1ce
 
 # Radio - from wayne - PKQ1.180904.001.V10.3.4.0.PDCCNXM
--app/QtiTelephonyService/QtiTelephonyService.apk|dc0b94c358d0e3a76cedfe96931165430ea0d79f
--app/datastatusnotification/datastatusnotification.apk|bdf2d0d67f461549a6e23f7b1e5b6a42e4f67d11
--app/embms/embms.apk|dbe514f41cfc842c25a368aab9d3f0a4a7d2ba84
 etc/permissions/embms.xml|5e1b492874c221a7e1188fc3a5369d32b3e67969
 etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
 etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
-framework/QtiTelephonyServicelibrary.jar|bc54ac5cec1f2a59139cc26391a2b9050fe145ff
-framework/embmslibrary.jar|180d4d6b65d989023364457eb1bf6e1d45f7e274
-framework/qcrilhook.jar|a854fff1973b0ad9935ca986945eeef84a3c79e6
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|d1d3adfe6eff32a3013e146317324029181e3c4a
 vendor/bin/ATFWD-daemon|f487d848042053512b36fa4c12413975d8512cef
 vendor/bin/hw/qcrild|5714b7719e5922f32d3bf25916f2bb5d50c02c8c
 vendor/bin/netmgrd|1dc899fae61a58b9dc82d73b7bce519846b972da
@@ -976,15 +948,9 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|8e63695b8c26c202
 vendor/radio/qcril_database/qcril.db|2acd6de9a8c2f00e9821bbbabf7c6da784075fc9
 
 # Radio IMS - from wayne - PKQ1.180904.001.V10.3.4.0.PDCCNXM
--app/imssettings/imssettings.apk:vendor/app/imssettings/imssettings.apk|b4b0f174abf7daaf825f4515ccbaced71d8fecdd
 etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|8d25bd7b79baf266950eb484c1a28817f891aec2
 etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|998076243537f61f3683a3c083f7b27510617368
 etc/permissions/com.qualcomm.qti.imscmservice.xml|db25ef24f1937366d58a53b4f4b8923bc9e98d2d
-framework/com.qualcomm.qti.imscmservice-V2.0-java.jar|ce261447fadf042be17180dc4bfe9d9da6d226f8
-framework/com.qualcomm.qti.imscmservice-V2.1-java.jar|0544ed31495666ad78fea2794344d3dd27b0bb96
-framework/com.qualcomm.qti.uceservice-V2.0-java.jar|fb3cfbcf20a3f615db118c7fc384032035a2c4d5
-framework/vendor.qti.ims.callinfo-V1.0-java.jar|6e52c7cb6862139050fb6a530b5e8fe8c319207f
-framework/vendor.qti.ims.rcsconfig-V1.0-java.jar|0d0f40e6a2801932e6175896e5631c57eb00d9e2
 lib64/lib-imscamera.so|e5ba2524015f23bf6897936b722f9af644ee0534
 lib64/lib-imsvideocodec.so|81f90be1bed693a680ee0d8f4938ece261306a03
 lib64/lib-imsvt.so|8dafceb20cb519944b669278e61b532eed0d9060
@@ -993,7 +959,6 @@ lib64/lib-imsvtutils.so|3c1913878aac6c5d5a9b279acecf5997d3737d5e
 lib64/libimscamera_jni.so|133fec4e7be337eb255eb226c4ff96ae53b94be7
 lib64/libimsmedia_jni.so|17a2cb31fb5960769b4c2c0636fffe721c4f2a74
 lib64/librcc.so|96c467ec6b7ea03b77cda3b88fb36a56c196aaa8
--priv-app/ims/ims.apk|06e88dd72fcf7141ca4c91ec0d3cf3c253c48445
 vendor/bin/ims_rtp_daemon|4cea8cd50daf5f7b0bd16ad42f18d563a4bc8457
 vendor/bin/imsdatadaemon|16e3d094cb9114d666500cc05fe2dfd32398db90
 vendor/bin/imsqmidaemon|5f6c4462710d2730fb4b02840e8f6cd612a1ffe7
@@ -1031,7 +996,6 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so|f982ba95f6e548d3cc791c
 vendor/lib64/vendor.qti.imsrtpservice@1.0.so|7ba73cb608b8279094912ee7f6c47b90ec4b4650
 
 # Radio Telephony Common - from CAF - PKQ1.190723.001.temp08082313
-framework/qti-telephony-common.jar|3198a9b6ba8a72f54697e4f45e1459e77e11ff28
 
 # SCVE - from clover - OPM1.171019.019.V10.3.2.0.ODJCNXM
 vendor/etc/scve/facereco/gModel.dat|447e5e3fefe8bcf36db0f7a8595c63fb326879ba
@@ -1109,7 +1073,6 @@ vendor/lib64/libthermalfeature.so|655a4b39b45a80069d7d8706a921ee0ace3a4865
 vendor/lib64/libthermalioctl.so|3ced2da2dda9dfd4eea9a1df92465d62de669b56
 
 # Time - from wayne - PKQ1.180904.001.V10.3.4.0.PDCCNXM
--vendor/app/TimeService/TimeService.apk|78109530538aa8fb533ad288c9d356c57481a10e
 vendor/bin/time_daemon|a11fadf60ba075581676f421a77c5f1430eb95ce
 vendor/lib/libtime_genoff.so|87dfe50d46e306b73efcd859ce9c7c9fa86cd5b5
 vendor/lib64/libtime_genoff.so|e341ec29dbfb6d1fae84915a6151fd56d25f4ddc
@@ -1123,7 +1086,6 @@ bin/wfdservice|edeb291221024401cbae69c2fa4e58733b7efc4c
 etc/init/wfdservice.rc|311bfdd1675e56499662f39455536b75b78477bb
 etc/wfdconfig.xml|8d5cfe06bdc8fc14b83ed10435b24f47639361cb
 etc/wfdconfigsink.xml|f180a45f69fa2ff01dbaf98c905cff1e9eba903e
--framework/WfdCommon.jar|2bef5df8b446a35ab0fda53e48e3874d793845ea
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so|93487a83a35f0fa3fe37445edd3ff22fcc52e4fc
 lib/extractors/libmmparser.so|da5306ae043ba24f40065558a190821ca272076c
 lib/libFileMux.so|5961dd16c9c6808e8321abf4b0266a9926ef327b
@@ -1156,7 +1118,6 @@ lib64/libmmrtpdecoder.so|5b6c1e8d63bab729862f8e4afff374e2e365a51a
 lib64/libmmrtpencoder.so|da67c10a9fb3579c2a5b8ab705fc0335ec62bef0
 lib64/libwfdclient.so|c69712162493bdaa8833b5aae342ee4f9b0c2408
 lib64/libwfdnative.so|4d11a9b451aa73e142e35ef48e6111b3f00eb603
--priv-app/WfdService/WfdService.apk|2963f350b12086bb94d4348eba9c94a6228e5717
 vendor/bin/wifidisplayhalservice|bb6758bf316bc6037be0ad0b890207095813ae6e
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|f3add191d48d9285eb1b69433c36bb3edbaf86fe
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so|d06f24d7f59afd7a972336e3f89e49347f440d2a
@@ -1172,7 +1133,6 @@ vendor/lib64/libwfdhdcpcp.so|cd7c9b49b094918d202edc50746b266a6761c585
 vendor/bin/cnss-daemon|93468d3c8c2100710b1f9ddec884fc455a839fd1
 
 # Misc - from clover - OPM1.171019.019.V10.3.2.0.ODJCNXM
--vendor/app/SVIService/SVIService.apk|2c8485cdd8dd7f7b1a48c42c818b45f75f6b5729
 vendor/bin/xtwifi-client|617bab50d547be6393874c80f1435e931f69cc10
 vendor/bin/xtwifi-inet-agent|d4391030c2ba255e8c44058889c3dbcaf70df6d2
 vendor/lib/libUserAgent.so|0867cbf67b9ee0ba8c7df39f3e1066a7e6cce525
