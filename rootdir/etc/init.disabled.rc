@@ -13,3 +13,10 @@ service vendor.imsdatadaemon imsdatadaemon_HYBRIS_DISABLED
 service vendor.ims_rtp_daemon ims_rtp_daemon_HYBRIS_DISABLED
     disabled
     override
+service time_daemon /vendor/bin/time_daemon_HYBRIS_DISABLED
+    class main
+    user system
+    group system
+    capabilities SYS_TIME
+    disabled
+    override
