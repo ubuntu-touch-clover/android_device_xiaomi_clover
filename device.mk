@@ -427,6 +427,9 @@ MINIMEDIA_SENSORSERVER_DISABLE := 1
 
 PRODUCT_PACKAGES += \
     libmedia_omx \
+    drmserver \
+    mediadrmserver \
+    mediaextractor \
     android.frameworks.displayservice@1.0
 
 PRODUCT_PACKAGES += \
@@ -441,6 +444,10 @@ PRODUCT_PACKAGES += \
     minimediaservice \
     minisfservice \
     miniafservice
+
+# Sensor
+PRODUCT_PACKAGES += \
+    sensorservice
 
 # Ubuntu
 PRODUCT_PACKAGES += \
