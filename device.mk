@@ -294,20 +294,20 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # OMX
-PRODUCT_PACKAGES += \
-    libc2dcolorconvert \
-    libextmedia_jni \
-    libhypv_intercept \
-    libmm-omxcore \
-    libOmxCore \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libstagefrighthw
+#PRODUCT_PACKAGES += \
+#    libc2dcolorconvert \
+#    libextmedia_jni \
+#    libhypv_intercept \
+#    libmm-omxcore \
+#    libOmxCore \
+#    libOmxAacEnc \
+#    libOmxAmrEnc \
+#    libOmxEvrcEnc \
+#    libOmxG711Enc \
+#    libOmxQcelp13Enc \
+#    libOmxVdec \
+#    libOmxVenc \
+#    libstagefrighthw
 
 # Enable StagefrightCodec 2.0 (Droidian Ugly Hack)
 PRODUCT_PACKAGES += \
