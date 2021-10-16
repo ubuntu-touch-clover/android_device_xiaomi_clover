@@ -274,6 +274,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
 # Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service \
+    android.hardware.media.omx@1.0-impl
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
@@ -295,24 +299,20 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # OMX
-#PRODUCT_PACKAGES += \
-#    libc2dcolorconvert \
-#    libextmedia_jni \
-#    libhypv_intercept \
-#    libmm-omxcore \
-#    libOmxCore \
-#    libOmxAacEnc \
-#    libOmxAmrEnc \
-#    libOmxEvrcEnc \
-#    libOmxG711Enc \
-#    libOmxQcelp13Enc \
-#    libOmxVdec \
-#    libOmxVenc \
-#    libstagefrighthw
-
-# Enable StagefrightCodec 2.0 (Droidian Ugly Hack)
 PRODUCT_PACKAGES += \
-    libstagefright_ccodec
+    libc2dcolorconvert \
+    libextmedia_jni \
+    libhypv_intercept \
+    libmm-omxcore \
+    libOmxCore \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libOmxVdec \
+    libOmxVenc \
+    libstagefrighthw
 
 # Power
 PRODUCT_PACKAGES += \
@@ -363,11 +363,15 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.2 \
     android.hardware.radio.config@1.0 \
     android.hardware.secure_element@1.0 \
-    android.hardware.radio@1.0-impl:32 \
-    android.hardware.radio@1.0-service:32 \
+    android.hardware.radio@1.0-impl \
+    android.hardware.radio@1.0-service \
+    android.hardware.radio@1.1-impl \
+    android.hardware.radio@1.1-service \
+    android.hardware.radio@1.2-impl \
+    android.hardware.radio@1.2-service \
     android.hardware.radio.deprecated@1.0 \
-    android.hardware.radio.deprecated@1.0-impl:32 \
-    android.hardware.radio.deprecated@1.0-service:32 \
+    android.hardware.radio.deprecated@1.0-impl \
+    android.hardware.radio.deprecated@1.0-service \
     librmnetctl \
     libxml2 \
     libprotobuf-cpp-full
