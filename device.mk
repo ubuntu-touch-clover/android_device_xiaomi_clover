@@ -310,6 +310,10 @@ PRODUCT_PACKAGES += \
 #    libOmxVenc \
 #    libstagefrighthw
 
+# Enable StagefrightCodec 2.0 (Droidian Ugly Hack)
+PRODUCT_PACKAGES += \
+    libstagefright_ccodec
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.1-service-qti
