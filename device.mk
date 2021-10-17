@@ -458,6 +458,13 @@ PRODUCT_PACKAGES += \
     libdrm \
     vendor.display.config@1.7
 
+# Fix OMX
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@1.0 \
+    vendor.qti.hardware.perf@1.0.vendor \
+    libstagefright_soft_hevcdec \
+    libstagefright_soft_mpeg4dec
+
 PRODUCT_PACKAGES += \
     libmedia_omx \
     drmserver \
