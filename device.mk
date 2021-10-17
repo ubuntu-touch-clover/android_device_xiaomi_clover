@@ -493,7 +493,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubports/70-clover.rules:system/halium/lib/udev/rules.d/70-android.rules \
     $(LOCAL_PATH)/ubports/scaling.conf:system/ubuntu/etc/ubuntu-touch-session.d/android.conf
-    
+ 
+PRODUCT_COPY_FILES += \
+    device/xiaomi/clover/seccomp/crash_dump.arm.policy:system/etc/seccomp_policy/crash_dump.arm.policy
+ 
 # Wi-Fi Display
 #PRODUCT_BOOT_JARS += \
 #    WfdCommon
