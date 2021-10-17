@@ -41,8 +41,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
+#  PRODUCT_ENFORCE_RRO_TARGETS := \
+#    framework-res
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -161,8 +161,8 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne
 
 # Configstore
-PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service
+#PRODUCT_PACKAGES += \
+#    android.hardware.configstore@1.0-service
 
 # Display
 PRODUCT_PACKAGES += \
@@ -274,10 +274,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
 # Media
-PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service \
-    android.hardware.media.omx@1.0-impl
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
@@ -360,17 +356,11 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.0 \
-    android.hardware.radio@1.1 \
     android.hardware.radio@1.2 \
     android.hardware.radio.config@1.0 \
     android.hardware.secure_element@1.0 \
     android.hardware.radio@1.0-impl \
     android.hardware.radio@1.0-service \
-    android.hardware.radio@1.1-impl \
-    android.hardware.radio@1.1-service \
-    android.hardware.radio@1.2-impl \
-    android.hardware.radio@1.2-service \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0-impl \
     android.hardware.radio.deprecated@1.0-service \
@@ -378,8 +368,8 @@ PRODUCT_PACKAGES += \
     libxml2 \
     libprotobuf-cpp-full
 
-PRODUCT_PACKAGES += \
-    ims-ext-common 
+#PRODUCT_PACKAGES += \
+#    ims-ext-common 
 
 PRODUCT_PACKAGES += \
     rild \
@@ -421,7 +411,9 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
 # VNDK
-PRODUCT_PACKAGES += vndk-sp
+PRODUCT_PACKAGES += \
+    vndk-sp \
+    vndk-core
 
 # WiFi
 PRODUCT_PACKAGES += \
