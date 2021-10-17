@@ -438,6 +438,16 @@ PRODUCT_COPY_FILES += \
     
 # Halium/UBports
 
+PRODUCT_PACKAGES += \
+    strace \
+    libminisf \
+    libnetutils \
+    android.hardware.radio@1.0 \
+    android.hardware.contexthub@1.0 \
+    android.hardware.media.omx@1.0-service \
+    android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth.a2dp@1.0
+
 # Disable FakeSensorServer so UBports can use it
 MINIMEDIA_SENSORSERVER_DISABLE := 1
 
