@@ -464,7 +464,8 @@ PRODUCT_PACKAGES += \
     drmserver \
     mediadrmserver \
     mediaextractor \
-    android.frameworks.displayservice@1.0
+    android.frameworks.displayservice@1.0 \
+    libclang_rt.ubsan_standalone-aarch64-android
 
 PRODUCT_PACKAGES += \
     libion \
