@@ -185,7 +185,8 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     android.hardware.renderscript@1.0-impl \
-    android.frameworks.displayservice@1.0
+    android.frameworks.displayservice@1.0 \
+    vendor.qti.hardware.display.mapper@2.0.vendor
 
 # Doze
 PRODUCT_PACKAGES += \
