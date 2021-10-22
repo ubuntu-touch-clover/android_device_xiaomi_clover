@@ -445,6 +445,8 @@ PRODUCT_PACKAGES += \
     strace \
     libminisf \
     libnetutils \
+    ese-ls-provision \
+    ese-replay \
     android.hardware.radio@1.0 \
     android.hardware.contexthub@1.0 \
     android.hardware.media.omx@1.0-impl \
@@ -478,6 +480,9 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_vorbisdec \
     libstagefright_soft_vpxdec \
     libstagefright_soft_vpxenc
+
+# FIX egl
+PRODUCT_PROPERTY_OVERRIDES += ro.hardware.egl=adreno
 
 # Misc
 PRODUCT_PACKAGES += \
