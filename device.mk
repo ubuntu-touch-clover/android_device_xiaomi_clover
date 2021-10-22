@@ -185,8 +185,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     android.hardware.renderscript@1.0-impl \
-    android.frameworks.displayservice@1.0 \
-    vendor.qti.hardware.display.mapper@2.0.vendor
+    android.frameworks.displayservice@1.0
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -307,7 +306,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
@@ -449,7 +447,6 @@ PRODUCT_PACKAGES += \
     ese-replay \
     android.hardware.radio@1.0 \
     android.hardware.contexthub@1.0 \
-    android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service \
     android.hardware.bluetooth@1.0 \
     android.hardware.bluetooth.a2dp@1.0
@@ -480,9 +477,6 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_vorbisdec \
     libstagefright_soft_vpxdec \
     libstagefright_soft_vpxenc
-
-# FIX egl
-PRODUCT_PROPERTY_OVERRIDES += ro.hardware.egl=adreno
 
 # Misc
 PRODUCT_PACKAGES += \
