@@ -285,6 +285,10 @@ Only the three quirks included above are recognized at this point:
             <Feature name="secure-playback" required="true" />
             <Limit name="concurrent-instances" max="7" />
         </MediaCodec>
+        <MediaCodec name="OMX.ffmpeg.h264.decoder" type="video/avc">
+            <Limit name="size" min="64x64" max="3840x2160" />
+            <Limit name="alignment" value="2x2" />
+        </MediaCodec>
         <MediaCodec name="OMX.qcom.video.decoder.divx" type="video/divx" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
